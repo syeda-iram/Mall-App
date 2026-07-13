@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Demo" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+
+    </style>
+
+    <style name="Theme.Demo" parent="Base.Theme.Demo" />
+
+    <!-- add the following code-->
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <!-- Set the splash screen background -->
+        <item name="windowSplashScreenBackground">@color/white</item>
+        <!-- Use windowSplashScreenAnimatedIcon to add a drawable or animated drawable -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo</item>
+        <!-- Set the theme of the Activity that directly follows your splash screen -->
+        <item name="postSplashScreenTheme">@style/Theme.MadProject</item>
+    </style>
+
+    <!-- Main app theme (after splash screen) -->
+    <style name="Theme.MadProject" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+    </style>
+
+</resources>

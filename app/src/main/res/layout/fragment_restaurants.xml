@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- HEADER -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restaurants"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="16dp"/>
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_restaurants"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:background="#FFFFFF"
+            android:elevation="6dp"
+            android:padding="8dp"
+            app:iconifiedByDefault="false"
+            app:queryHint="Search restaurants, cuisine..."
+            app:queryBackground="@android:color/transparent"
+            app:submitBackground="@android:color/transparent" />
+
+        <!-- RESTAURANT CARD 1 (Featured) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:elevation="6dp"
+            android:layout_marginBottom="16dp"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            android:id="@+id/restaurant1"
+            android:radius="12dp">
+
+            <ImageView
+                android:src="@drawable/olivegarden"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="12dp"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="188dp"
+                    android:layout_height="wrap_content"
+                    android:text="Olive Garden"
+                    android:textColor="#222222"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Italian • Pasta, Pizza"
+                    android:textColor="#555555"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="171dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_star" />
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_star" />
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_star" />
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_star" />
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_star" />
+
+                    <TextView
+                        android:layout_width="89dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="6dp"
+                        android:text="5.0"
+                        android:textColor="#555555"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:text="20% OFF"
+                    android:background="#FF9800"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:padding="4dp"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:radius="8dp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/favorite_icon1"
+                android:layout_width="50dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/favorites" />
+        </LinearLayout>
+
+        <!-- RESTAURANT CARD 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:elevation="6dp"
+            android:layout_marginBottom="16dp"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            android:id="@+id/restaurant2"
+            android:radius="12dp">
+
+            <ImageView
+                android:src="@drawable/burgerking"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="12dp"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Burger King"
+                    android:textColor="#222222"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Fast Food • Burgers, Fries"
+                    android:textColor="#555555"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="161dp"
+                    android:layout_height="23dp"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_star" />
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_star" />
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_star" />
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_star" />
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_star" />
+
+                    <TextView
+                        android:layout_width="47dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="6dp"
+                        android:text="4.8"
+                        android:textColor="#555555"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:text="15% OFF"
+                    android:background="#4CAF50"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:padding="4dp"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:radius="8dp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/favorite_icon2"
+                android:layout_width="48dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/favorites" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

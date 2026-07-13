@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- HEADER -->
+        <TextView
+            android:id="@+id/offers_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Hot Offers"
+            android:textColor="#333333"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- OFFER CARD 1 -->
+        <LinearLayout
+            android:id="@+id/offer1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:elevation="6dp"
+            android:layout_marginBottom="20dp"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            android:gravity="center_vertical"
+            android:layout_marginTop="4dp"
+            android:radius="12dp">
+
+            <!-- Store Logo -->
+            <ImageView
+                android:id="@+id/offer1_logo"
+                android:src="@drawable/uniworth"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerInside"
+                android:layout_marginEnd="12dp"/>
+
+            <!-- Offer Details -->
+            <LinearLayout
+                android:id="@+id/offer1_details"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/offer1_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/uniworth_summer_sale"
+                    android:textColor="#222222"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/offer1_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/up_to_50_off_on_selected_clothing_items_grab_your_favorites_now"
+                    android:textColor="#555555"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <!-- Discount Badge -->
+            <TextView
+                android:id="@+id/offer1_discount"
+                android:text="@string/_50_off"
+                android:background="#F57C00"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:padding="6dp"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:radius="8dp"/>
+        </LinearLayout>
+
+        <!-- OFFER CARD 2 -->
+        <LinearLayout
+            android:id="@+id/offer2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:elevation="6dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            android:radius="12dp">
+
+            <ImageView
+                android:id="@+id/offer2_logo"
+                android:src="@drawable/cou"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerInside"
+                android:layout_marginEnd="12dp"/>
+
+            <LinearLayout
+                android:id="@+id/offer2_details"
+                android:layout_width="0dp"
+                android:layout_height="66dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/offer2_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cougar_buy_1_get_1"
+                    android:textColor="#222222"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/offer2_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/exclusive_offer_on_footwear_buy_one_pair_and_get_the_second_free"
+                    android:textColor="#555555"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/offer2_discount"
+                android:text="@string/special_off"
+                android:background="#FF3D00"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:padding="6dp"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:radius="8dp"/>
+        </LinearLayout>
+
+        <!-- OFFER CARD 3: Monark -->
+        <LinearLayout
+            android:id="@+id/offer3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:elevation="6dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            android:radius="12dp">
+
+            <ImageView
+                android:id="@+id/offer3_logo"
+                android:src="@drawable/monark"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerInside"
+                android:layout_marginEnd="12dp"/>
+
+            <LinearLayout
+                android:id="@+id/offer3_details"
+                android:layout_width="0dp"
+                android:layout_height="78dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/offer3_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/monark_electronics_fest"
+                    android:textColor="#222222"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/offer3_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/get_up_to_30_off_on_gadgets_and_electronics_limited_time_offer"
+                    android:textColor="#555555"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/offer3_discount"
+                android:text="@string/_30_off"
+                android:background="#4CAF50"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:padding="6dp"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:radius="8dp"/>
+        </LinearLayout>
+
+        <!-- OFFER CARD 4: Apple -->
+        <LinearLayout
+            android:id="@+id/offer4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:elevation="6dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            android:radius="12dp">
+
+            <ImageView
+                android:id="@+id/offer4_logo"
+                android:src="@drawable/apple"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerInside"
+                android:layout_marginEnd="12dp"/>
+
+            <LinearLayout
+                android:id="@+id/offer4_details"
+                android:layout_width="0dp"
+                android:layout_height="68dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/offer4_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/apple_holiday_discounts"
+                    android:textColor="#222222"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/offer4_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/save_up_to_25_on_selected_accessories_and_devices"
+                    android:textColor="#555555"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/offer4_discount"
+                android:text="@string/_25_off"
+                android:background="#2196F3"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:padding="6dp"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:radius="8dp"/>
+        </LinearLayout>
+
+        <!-- OFFER CARD 5: Outfitters -->
+        <LinearLayout
+            android:id="@+id/offer5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:elevation="6dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            android:radius="12dp">
+
+            <ImageView
+                android:id="@+id/offer5_logo"
+                android:src="@drawable/outfitter"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerInside"
+                android:layout_marginEnd="12dp"/>
+
+            <LinearLayout
+                android:id="@+id/offer5_details"
+                android:layout_width="0dp"
+                android:layout_height="67dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/offer5_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/outfitters_weekend_sale"
+                    android:textColor="#222222"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/offer5_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/flat_40_off_on_jackets_and_winter_clothing"
+                    android:textColor="#555555"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/offer5_discount"
+                android:text="@string/_40_off"
+                android:background="#FF9800"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:padding="6dp"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:radius="8dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

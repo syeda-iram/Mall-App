@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF6E5">
+
+    <!--  MAIN MAP CONTAINER  -->
+    <FrameLayout
+        android:id="@+id/mapContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF6E5">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!--  GRADIENT OVERLAY FOR MAP  -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_map_gradient"/>
+
+    </FrameLayout>
+
+    <!--  TOP GLASS SEARCH BAR WITH ORANGE ACCENT  -->
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_glass_orange"
+        app:iconifiedByDefault="false"
+        app:queryHint="Search stores, parking, restaurants"
+        app:queryBackground="@android:color/transparent"
+        app:submitBackground="@android:color/transparent"
+        android:padding="12dp" />
+
+    <!--  RIGHT FLOATING MAP CONTROLS WITH ORANGE THEME  -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center_vertical"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/btnZoomIn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#FFF6E5"
+            android:scaleType="fitCenter"
+            app:tint="#F57C00"
+            android:src="@drawable/plus"/>
+
+        <ImageButton
+            android:id="@+id/btnZoomOut"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="#FFF6E5"
+            android:scaleType="fitCenter"
+            app:tint="#F57C00"
+            android:src="@drawable/minus"/>
+
+    </LinearLayout>
+
+    <!--  FLOOR SELECTOR WITH ORANGE THEME  -->
+    <LinearLayout
+        android:id="@+id/floorSelector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center_vertical"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/bg_floor_stack_orange"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/floor3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="#FFF6E5"
+            android:text="F3"
+            android:textColor="#F57C00"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/floor2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="#FFF6E5"
+            android:text="F2"
+            android:textColor="#F57C00"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/floor1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="#F57C00"
+            android:text="F1"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!--  BOTTOM INFO PANEL WITH ORANGE THEME  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_bottom_card_orange"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/txtCurrentFloor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You are on Floor 1"
+            android:textColor="#F57C00"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtNearestStore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Nearest Store: Apple • 12m away"
+            android:textColor="#F57C00"
+            android:alpha="0.8"
+            android:textSize="14sp" />
+
+        <!--  QUICK ACTIONS  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <!-- Using AppCompatButton -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnNavigate"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button_orange_outline"
+                android:text="Navigate"
+                android:textAllCaps="false"
+                android:textColor="#F57C00"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnBookParking"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button_orange_outline"
+                android:text="Locate Store"
+                android:textAllCaps="false"
+                android:textColor="#F57C00"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

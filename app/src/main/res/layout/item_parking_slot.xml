@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parking_slot_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="16dp">
+
+    <!-- Lane Header -->
+    <TextView
+        android:id="@+id/tv_lane_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LANE A"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Grid of slots -->
+    <GridLayout
+        android:id="@+id/slots_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="6"
+        android:rowCount="1">
+
+        <!-- Slots will be added dynamically -->
+
+    </GridLayout>
+
+</LinearLayout>

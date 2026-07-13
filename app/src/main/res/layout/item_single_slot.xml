@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/slotContainer"
+    android:layout_width="0dp"
+    android:layout_height="100dp"
+    android:layout_columnWeight="1"
+    android:layout_margin="4dp"
+    android:background="@drawable/bg_slot_free"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Slot Number -->
+    <TextView
+        android:id="@+id/tvSlotNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A1"
+        android:textColor="#22C55E"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Book Button (visible when available) -->
+    <Button
+        android:id="@+id/btnBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#22C55E"
+        android:text="BOOK"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:visibility="visible" />
+
+    <!-- Car Icon (visible when occupied) -->
+    <ImageView
+        android:id="@+id/car"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/car"
+        app:tint="#CBD5E1"
+        android:visibility="gone" />
+
+</LinearLayout>

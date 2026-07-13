@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Mad Project</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="flat_40_off_on_jackets_and_winter_clothing">Flat 40% off on jackets and winter clothing.</string>
+    <string name="_40_off">40% OFF</string>
+    <string name="outfitters_weekend_sale">Outfitters - Weekend Sale</string>
+    <string name="_25_off">25% OFF</string>
+    <string name="save_up_to_25_on_selected_accessories_and_devices">Save up to 25% on selected accessories and devices.</string>
+    <string name="apple_holiday_discounts">Apple - Holiday Discounts</string>
+    <string name="_30_off">30% OFF</string>
+    <string name="get_up_to_30_off_on_gadgets_and_electronics_limited_time_offer">Get up to 30% off on gadgets and electronics. Limited time offer!</string>
+    <string name="monark_electronics_fest">Monark - Electronics Fest</string>
+    <string name="exclusive_offer_on_footwear_buy_one_pair_and_get_the_second_free">Exclusive offer on footwear. Buy one pair, get one free!</string>
+    <string name="special_off">Special OFF</string>
+    <string name="cougar_buy_1_get_1">Cougar - Buy 1 Get 1</string>
+    <string name="_50_off">50% OFF</string>
+    <string name="up_to_50_off_on_selected_clothing_items_grab_your_favorites_now">Up to 50% off on selected clothing items. Grab your favorites now!</string>
+    <string name="uniworth_summer_sale">Uniworth - Summer Sale</string>
+    <string name="your_favourites">Your Favourites</string>
+    <string name="price_14_99_discount_75">Price: $14.99 Discount: 75%</string>
+    <string name="uniworth_casual_shirt">Uniworth - Casual Shirt</string>
+    <string name="price_45_discount_50">Price: $45 Discount: 50%</string>
+    <string name="recent_searches">Recent Searches</string>
+    <string name="search_results">Search Results</string>
+    <string name="suggested_stores">Suggested Stores</string>
+    <string name="no_results_found">No results found</string>
+    <string name="try_different_keywords">Try different keywords</string>
+    <string name="_0_products">0 products</string>
+    <string name="search_stores_or_products">Search stores or products...</string>
+</resources>
