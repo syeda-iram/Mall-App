@@ -73,6 +73,16 @@ HOW TO RUN
 4. Run the app on an emulator or physical device (API level 24 or above)
 
 
+INSTALL WITHOUT BUILDING (APK)
+--------------------------------
+If you just want to try the app without opening the project in Android
+Studio, a ready-to-install APK is included in this repository.
+1. Download the APK file from the repo
+2. Transfer it to your Android phone (or open the link directly on phone)
+3. Enable "Install from unknown sources" if prompted
+4. Tap the APK file to install and open the app
+
+
 DEMO
 -----
 A demo video (demo.mp4) is included showing the complete user flow:
